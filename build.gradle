@@ -1,0 +1,16 @@
+allprojects {
+    group = 'com.example'
+    version = project.properties['project_version']
+}
+
+subprojects {
+    apply plugin: 'java'
+
+    java {
+        sourceCompatibility = '21'
+    }
+
+    repositories {
+        mavenCentral()
+    }
+}
